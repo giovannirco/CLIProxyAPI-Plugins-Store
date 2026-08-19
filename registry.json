@@ -732,6 +732,20 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "api-key-manager",
+      "name": "API Key 管理器",
+      "description": "为 CLIProxyAPI API Key 增加名称、备注，并提供 API Key 的增删改查管理页面。",
+      "author": "bmqy",
+      "version": "0.1.7",
+      "repository": "https://github.com/bmqy/cpa-plugin-apikey-manager",
+      "homepage": "https://github.com/bmqy/cpa-plugin-apikey-manager",
+      "tags": [
+        "Management",
+        "API Key",
+        "Credentials"
+      ]
     }
   ]
 }
