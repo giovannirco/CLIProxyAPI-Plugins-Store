@@ -732,6 +732,22 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "opencode-go-quota",
+      "name": "OpenCode Go Pool",
+      "description": "Quota-aware OpenCode Go account dashboard and operator pool controls for CLIProxyAPI.",
+      "author": "Duu",
+      "version": "0.4.0",
+      "repository": "https://github.com/duu261/opencode-go-pool",
+      "homepage": "https://github.com/duu261/opencode-go-pool",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Scheduler",
+        "OpenCode"
+      ]
     }
   ]
 }
