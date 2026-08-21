@@ -732,6 +732,23 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "cpa-usage-statistics",
+      "name": "CPA Usage Statistics",
+      "description": "Tracks per-auth-file token usage, quota reset cycles, account status, and equivalent USD/CNY API cost in a CPA management dashboard.",
+      "author": "Oniokey",
+      "version": "0.6.0",
+      "repository": "https://github.com/Oniokey/CPAUsageStatistics",
+      "homepage": "https://github.com/Oniokey/CPAUsageStatistics",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Statistics",
+        "Codex",
+        "Dashboard"
+      ]
     }
   ]
 }
