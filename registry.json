@@ -732,6 +732,21 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "aq-codex-responses-lite",
+      "name": "Codex Responses Lite Rules",
+      "description": "Enables CPA's native Codex Responses Lite path for exact provider-prefix/model rules, preventing automatic hosted image_generation injection without replacing CPA routing, credentials, execution, or streaming.",
+      "author": "AstroQore",
+      "version": "0.1.0",
+      "repository": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
+      "homepage": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
+      "license": "MIT",
+      "tags": [
+        "Interceptor",
+        "Codex",
+        "Responses"
+      ]
     }
   ]
 }
