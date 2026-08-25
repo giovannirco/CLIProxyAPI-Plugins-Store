@@ -732,6 +732,21 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "gemini-openai-normalizer",
+      "name": "Gemini OpenAI Normalizer",
+      "description": "Normalizes Gemini OpenAI Chat Completions and Responses IDs, requested model aliases, reasoning token usage, and streaming chunks without changing non-Gemini traffic.",
+      "author": "licoba",
+      "repository": "https://github.com/licoba/cpa-plugin-gemini-openai-normalizer",
+      "homepage": "https://github.com/licoba/cpa-plugin-gemini-openai-normalizer",
+      "license": "MIT",
+      "tags": [
+        "Interceptor",
+        "Gemini",
+        "OpenAI",
+        "Responses"
+      ]
     }
   ]
 }
