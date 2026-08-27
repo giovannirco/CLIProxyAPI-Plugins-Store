@@ -51,6 +51,7 @@
       "author": "Willxup",
       "version": "0.1.0",
       "repository": "https://github.com/Willxup/cpa-plugin-usage-keeper",
+      "logo": "https://raw.githubusercontent.com/Willxup/cpa-plugin-usage-keeper/main/logo.svg",
       "homepage": "https://github.com/Willxup/cpa-plugin-usage-keeper",
       "license": "MIT",
       "tags": [
