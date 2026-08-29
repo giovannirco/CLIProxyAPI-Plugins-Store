@@ -2,6 +2,14 @@
   "schema_version": 1,
   "plugins": [
     {
+      "id": "opencode-go-cliproxyapi",
+      "name": "OpenCode Go",
+      "description": "One provider for the OpenCode Go plan: chat-completions, messages, and responses routes behind one shared key pool.",
+      "author": "massiveits",
+      "repository": "https://github.com/massiveits/opencode-go-cliproxyapi",
+      "tags": ["provider"]
+    },
+    {
       "id": "jshandler",
       "name": "JS Handler",
       "description": "A CLIProxyAPI plugin that executes external JavaScript scripts to intercept and modify requests, responses, and streaming chunks using the Goja VM engine.",
