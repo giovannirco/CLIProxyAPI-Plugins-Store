@@ -776,6 +776,22 @@
         "Quota",
         "Access Control"
       ]
+    },
+    {
+      "id": "cpa-prometheus",
+      "name": "CPA Prometheus",
+      "description": "Prometheus metrics for CLIProxyAPI usage, Management Center dashboard counts, and provider quota windows (Claude, Codex, Antigravity, Gemini CLI, Kimi, xAI).",
+      "author": "giovannirco",
+      "version": "0.1.8",
+      "repository": "https://github.com/giovannirco/cpa-prometheus-plugin",
+      "logo": "https://raw.githubusercontent.com/giovannirco/cpa-prometheus-plugin/main/logo.png",
+      "homepage": "https://github.com/giovannirco/cpa-prometheus-plugin",
+      "license": "MIT",
+      "tags": [
+        "Usage",
+        "Quota",
+        "Monitoring"
+      ]
     }
   ]
 }
