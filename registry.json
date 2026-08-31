@@ -732,6 +732,21 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "antigravity-proactive-refresh",
+      "name": "Antigravity Proactive Refresh",
+      "description": "Proactively rotates Google Antigravity OAuth access tokens and provides a management-key-protected status and refresh dashboard.",
+      "author": "Senn's Team",
+      "version": "1.2.0",
+      "repository": "https://github.com/Senn-s-Team/cpa-antigravity-proactive-refresh",
+      "homepage": "https://github.com/Senn-s-Team/cpa-antigravity-proactive-refresh",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Auth",
+        "Antigravity"
+      ]
     }
   ]
 }
