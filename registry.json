@@ -736,9 +736,9 @@
     {
       "id": "key-account-bind",
       "name": "Key Account Bind",
-      "description": "Binds downstream API keys to specific upstream credentials (auth files) at scheduler.pick time. Resolves the caller key from original request headers, so isolation does not depend on frontend-auth metadata forwarding. Bound keys hard-fail instead of falling back to another account.",
+      "description": "Binds downstream API keys to specific upstream credentials (auth files) at scheduler.pick time. Bound pools support round-robin, weighted-round-robin, and fill-first while remaining fail-closed, without relying on frontend-auth metadata forwarding.",
       "author": "FFatTiger",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "repository": "https://github.com/FFatTiger/cpa-key-account-bind",
       "homepage": "https://github.com/FFatTiger/cpa-key-account-bind",
       "license": "MIT",
