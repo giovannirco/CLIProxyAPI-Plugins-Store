@@ -732,6 +732,21 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "key-account-bind",
+      "name": "Key Account Bind",
+      "description": "Binds downstream API keys to specific upstream credentials (auth files) at scheduler.pick time. Resolves the caller key from original request headers, so isolation does not depend on frontend-auth metadata forwarding. Bound keys hard-fail instead of falling back to another account.",
+      "author": "FFatTiger",
+      "version": "0.2.1",
+      "repository": "https://github.com/FFatTiger/cpa-key-account-bind",
+      "homepage": "https://github.com/FFatTiger/cpa-key-account-bind",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Auth",
+        "Isolation"
+      ]
     }
   ]
 }
