@@ -839,6 +839,21 @@
         "Scheduler",
         "OpenCode"
       ]
+    },
+    {
+      "id": "deepseek-reasoning-fixer",
+      "name": "DeepSeek Reasoning Content Fixer",
+      "description": "Normalizes DeepSeek thinking-mode requests: fills missing/empty reasoning_content on assistant messages so the upstream Console no longer rejects long agentic sessions with 400.",
+      "author": "ahoo",
+      "version": "0.1.1",
+      "repository": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
+      "homepage": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
+      "license": "MIT",
+      "tags": [
+        "deepseek",
+        "reasoning",
+        "normalizer"
+      ]
     }
   ]
 }
