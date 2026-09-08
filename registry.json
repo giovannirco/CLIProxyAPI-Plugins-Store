@@ -850,6 +850,21 @@
         "Auth",
         "Isolation"
       ]
+    },
+    {
+      "id": "cpa-bark-notifier",
+      "name": "CPA Bark Notifier",
+      "description": "Sends opt-in Codex quota, HTTP 401/429, and recovery alerts through Bark, with selected-credential monitoring, optional scheduled quota probes, multi-device delivery, and optional encryption. Does not take over scheduling.",
+      "author": "Jimu Intelligence",
+      "repository": "https://github.com/JiMu-cn/cpa-bark-notifier",
+      "homepage": "https://github.com/JiMu-cn/cpa-bark-notifier",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Codex",
+        "Quota",
+        "Notifications"
+      ]
     }
   ]
 }
