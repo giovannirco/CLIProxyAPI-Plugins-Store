@@ -2,6 +2,22 @@
   "schema_version": 1,
   "plugins": [
     {
+      "id": "credential-tier-router",
+      "name": "Credential Tiers",
+      "description": "Manages Codex and Antigravity credentials through quota-aware primary, regular, backup, and paused tiers with a Management Center UI.",
+      "author": "William-zgx",
+      "version": "0.1.2",
+      "repository": "https://github.com/William-zgx/cpa-plugin-credential-tier-router",
+      "homepage": "https://github.com/William-zgx/cpa-plugin-credential-tier-router",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Management",
+        "Codex",
+        "Antigravity"
+      ]
+    },
+    {
       "id": "jshandler",
       "name": "JS Handler",
       "description": "A CLIProxyAPI plugin that executes external JavaScript scripts to intercept and modify requests, responses, and streaming chunks using the Goja VM engine.",
