@@ -761,190 +761,6 @@
       ]
     },
     {
-      "id": "censorship",
-      "name": "Censorship",
-      "description": "Filters selected text in CLIProxyAPI request bodies with strict format and role scopes, supporting block, strip, and zero-width obfuscation modes. Use it to reject or transform configured terms before upstream execution; it never inspects or changes model responses.",
-      "author": "DoingDog",
-      "repository": "https://github.com/DoingDog/cpa-plugin-censorship",
-      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-censorship/main/logo.png",
-      "homepage": "https://github.com/DoingDog/cpa-plugin-censorship",
-      "license": "Unlicense"
-    },
-    {
-      "id": "aggregate-usage",
-      "name": "Aggregate Usage",
-      "description": "Aggregates quota and usage for one logical CPAMP account across multiple CLIProxyAPI nodes, with a management dashboard, history, and DingTalk reporting.",
-      "author": "Stars4422335",
-      "version": "0.3.1",
-      "repository": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
-      "homepage": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
-      "license": "MIT",
-      "tags": [
-        "Management",
-        "Usage",
-        "Quota",
-        "Dashboard"
-      ]
-    },
-    {
-      "id": "cpa-key-billing",
-      "name": "CPA Key Billing",
-      "description": "Adds downstream API key billing with subscription quotas, model access controls, concurrency limits, and an embedded management UI.",
-      "author": "haowang02",
-      "version": "1.1.2",
-      "repository": "https://github.com/haowang02/cpa-plugin-key-billing",
-      "homepage": "https://github.com/haowang02/cpa-plugin-key-billing",
-      "license": "MIT",
-      "tags": [
-        "Management",
-        "Billing",
-        "Quota",
-        "Access Control"
-      ]
-    },
-    {
-      "id": "ark-429-autoban",
-      "name": "ARK 429 Autoban",
-      "description": "Auto-isolates Volcano Engine ARK API keys on HTTP 429 with precise reset-time parsing, per-error-code fallback durations, key label auto-compute from config comments, and a management UI for monitoring and manual unban.",
-      "author": "wyx1818",
-      "repository": "https://github.com/wyx1818/ark-429-autoban",
-      "homepage": "https://github.com/wyx1818/ark-429-autoban",
-      "license": "MIT",
-      "tags": [
-        "Scheduler",
-        "Usage",
-        "ARK",
-        "Volcano Engine",
-        "429"
-      ]
-    },
-    {
-      "id": "glm-vision-bridge",
-      "name": "GLM Vision Bridge",
-      "description": "Bridges vision and text models with bounded persistent visual memory, parallel image-tool batch handling, explicit reanalysis, and safe history compression across OpenAI Chat, Responses, and Claude Messages.",
-      "author": "wangwq7",
-      "version": "1.1.4",
-      "repository": "https://github.com/wangwq7/cpa-glm-vision-bridge",
-      "homepage": "https://github.com/wangwq7/cpa-glm-vision-bridge",
-      "license": "MIT",
-      "tags": [
-        "Executor",
-        "Vision",
-        "Router",
-        "Claude",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "api-key-manager",
-      "name": "API Key 管理器",
-      "description": "为 CLIProxyAPI API Key 增加名称、备注，并提供 API Key 的增删改查管理页面。",
-      "author": "bmqy",
-      "version": "0.1.7",
-      "repository": "https://github.com/bmqy/cpa-plugin-apikey-manager",
-      "homepage": "https://github.com/bmqy/cpa-plugin-apikey-manager",
-      "tags": [
-        "Management",
-        "API Key",
-        "Credentials"
-      ]
-    },
-    {
-      "id": "opencode-go-quota",
-      "name": "OpenCode Go Pool",
-      "description": "Quota-aware OpenCode Go account dashboard and operator pool controls for CLIProxyAPI.",
-      "author": "Duu",
-      "version": "0.4.0",
-      "repository": "https://github.com/duu261/opencode-go-pool",
-      "homepage": "https://github.com/duu261/opencode-go-pool",
-      "license": "MIT",
-      "tags": [
-        "Management",
-        "Usage",
-        "Scheduler",
-        "OpenCode"
-      ]
-    },
-    {
-      "id": "deepseek-reasoning-fixer",
-      "name": "DeepSeek Reasoning Content Fixer",
-      "description": "Normalizes DeepSeek thinking-mode requests: fills missing/empty reasoning_content on assistant messages so the upstream Console no longer rejects long agentic sessions with 400.",
-      "author": "ahoo",
-      "version": "0.1.1",
-      "repository": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
-      "homepage": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
-      "license": "MIT",
-      "tags": [
-        "deepseek",
-        "reasoning",
-        "normalizer"
-      ]
-    },
-    {
-      "id": "key-provider-access",
-      "name": "Key Provider Access",
-      "description": "Enforces per-CPA-key allow and deny policies for OAuth profiles and API-backed upstream providers, with a management dashboard and profile-aware scheduler filtering.",
-      "author": "GLGDLY",
-      "version": "0.0.3",
-      "repository": "https://github.com/GLGDLY/key-provider-access",
-      "homepage": "https://github.com/GLGDLY/key-provider-access",
-      "license": "MIT",
-      "tags": [
-        "Management",
-        "Auth",
-        "Security",
-        "Scheduler"
-      ]
-    },
-    {
-      "id": "aq-codex-responses-lite",
-      "name": "Codex Responses Lite Rules",
-      "description": "Enables CPA's native Codex Responses Lite path for exact provider-prefix/model rules, preventing automatic hosted image_generation injection without replacing CPA routing, credentials, execution, or streaming.",
-      "author": "AstroQore",
-      "version": "0.1.0",
-      "repository": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
-      "homepage": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
-      "license": "MIT",
-      "tags": [
-        "Interceptor",
-        "Codex",
-        "Responses"
-      ]
-    },
-    {
-      "id": "cpa-usage-statistics",
-      "name": "CPA Usage Statistics",
-      "description": "Tracks per-auth-file token usage, quota reset cycles, account status, and equivalent USD/CNY API cost in a CPA management dashboard.",
-      "author": "Oniokey",
-      "version": "0.6.1",
-      "repository": "https://github.com/Oniokey/CPAUsageStatistics",
-      "homepage": "https://github.com/Oniokey/CPAUsageStatistics",
-      "license": "MIT",
-      "tags": [
-        "Management",
-        "Usage",
-        "Statistics",
-        "Codex",
-        "Dashboard"
-      ]
-    },
-    {
-      "id": "cursor",
-      "name": "Cursor for CPA/CLIProxyAPI",
-      "description": "Adds user-authorized Cursor subscriptions as a CLIProxyAPI provider with OAuth login, dynamic model discovery, streaming OpenAI Chat Completions, bounded session checkpoints, stable tool-call IDs, empty-response validation, image and text attachments, separated request and host-attempt metrics, deduplicated account status, and bilingual model controls. | 将用户本人授权的 Cursor 订阅接入 CLIProxyAPI，提供 OAuth 登录、动态模型发现、OpenAI Chat Completions 流式调用、有界会话检查点、稳定工具调用 ID、空响应校验、图片与文本附件、分离的请求与宿主尝试指标、账户去重及中英文模型控制。",
-      "author": "yobo2u",
-      "repository": "https://github.com/yobo2u/omsub",
-      "homepage": "https://github.com/yobo2u/omsub/tree/cursor/cursor-plugin",
-      "license": "MIT",
-      "tags": [
-        "Provider",
-        "Cursor",
-        "OAuth",
-        "Management",
-        "Usage"
-      ]
-    },
-    {
       "id": "provider-rate-limiter",
       "name": "Provider Rate Limiter",
       "description": "Applies independent sliding-window RPM limits to CPA auth candidates through the official scheduler plugin capability, with provider-wide defaults and per-auth overrides.",
@@ -958,6 +774,21 @@
         "Rate Limit",
         "Codex",
         "Multi-account"
+      ]
+    },
+    {
+      "id": "gemini-openai-normalizer",
+      "name": "Gemini OpenAI Normalizer",
+      "description": "Normalizes Gemini OpenAI Chat Completions and Responses IDs, requested model aliases, reasoning token usage, and streaming chunks without changing non-Gemini traffic.",
+      "author": "licoba",
+      "repository": "https://github.com/licoba/cpa-plugin-gemini-openai-normalizer",
+      "homepage": "https://github.com/licoba/cpa-plugin-gemini-openai-normalizer",
+      "license": "MIT",
+      "tags": [
+        "Interceptor",
+        "Gemini",
+        "OpenAI",
+        "Responses"
       ]
     }
   ]
