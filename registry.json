@@ -865,6 +865,22 @@
         "Quota",
         "Notifications"
       ]
+    },
+    {
+      "id": "codex-fleet-manager",
+      "name": "Codex Fleet Manager",
+      "description": "Manages CPA Codex accounts with quota-aware scheduling, account health monitoring, reset-window activation, and a bilingual management interface.",
+      "author": "doer-ee",
+      "version": "0.1.0",
+      "repository": "https://github.com/doer-ee/cpa-plugin-codex-fleet-manager",
+      "homepage": "https://github.com/doer-ee/cpa-plugin-codex-fleet-manager",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Management",
+        "Monitoring",
+        "Codex"
+      ]
     }
   ]
 }
