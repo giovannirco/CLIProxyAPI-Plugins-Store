@@ -761,22 +761,6 @@
       ]
     },
     {
-      "id": "provider-rate-limiter",
-      "name": "Provider Rate Limiter",
-      "description": "Applies independent sliding-window RPM limits to CPA auth candidates through the official scheduler plugin capability, with provider-wide defaults and per-auth overrides.",
-      "author": "lsmallice",
-      "version": "0.3.0",
-      "repository": "https://github.com/lsmallice/cliproxyapi-provider-rate-limiter-plugin",
-      "homepage": "https://github.com/lsmallice/cliproxyapi-provider-rate-limiter-plugin",
-      "license": "MIT",
-      "tags": [
-        "Scheduler",
-        "Rate Limit",
-        "Codex",
-        "Multi-account"
-      ]
-    },
-    {
       "id": "gemini-openai-normalizer",
       "name": "Gemini OpenAI Normalizer",
       "description": "Normalizes Gemini OpenAI Chat Completions and Responses IDs, requested model aliases, reasoning token usage, and streaming chunks without changing non-Gemini traffic.",
@@ -789,6 +773,20 @@
         "Gemini",
         "OpenAI",
         "Responses"
+      ]
+    },
+    {
+      "id": "codex-msg-translator",
+      "name": "Codex Message Translator",
+      "description": "Transpiles Codex multi-agent agent_message payloads (encrypted_content) into plaintext input_text so DeepSeek and other openai-compatible endpoints can receive spawn/followup/send_message tasks.",
+      "author": "MarioZZJ",
+      "version": "0.3.0",
+      "repository": "https://github.com/MarioZZJ/codex-msg-translator",
+      "license": "MIT",
+      "tags": [
+        "Interceptor",
+        "Codex",
+        "DeepSeek"
       ]
     }
   ]
