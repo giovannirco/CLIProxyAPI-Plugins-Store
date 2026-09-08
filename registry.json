@@ -852,6 +852,52 @@
       ]
     },
     {
+      "id": "cpa-bark-notifier",
+      "name": "CPA Bark Notifier",
+      "description": "Sends opt-in Codex quota, HTTP 401/429, and recovery alerts through Bark, with selected-credential monitoring, optional scheduled quota probes, multi-device delivery, and optional encryption. Does not take over scheduling.",
+      "author": "Jimu Intelligence",
+      "repository": "https://github.com/JiMu-cn/cpa-bark-notifier",
+      "homepage": "https://github.com/JiMu-cn/cpa-bark-notifier",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Codex",
+        "Quota",
+        "Notifications"
+      ]
+    },
+    {
+      "id": "codex-fleet-manager",
+      "name": "Codex Fleet Manager",
+      "description": "Manages CPA Codex accounts with quota-aware scheduling, account health monitoring, reset-window activation, and a bilingual management interface.",
+      "author": "doer-ee",
+      "version": "0.1.0",
+      "repository": "https://github.com/doer-ee/cpa-plugin-codex-fleet-manager",
+      "homepage": "https://github.com/doer-ee/cpa-plugin-codex-fleet-manager",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Management",
+        "Monitoring",
+        "Codex"
+      ]
+    },
+    {
+      "id": "opencode-session-mapper",
+      "name": "OpenCode Session Mapper",
+      "description": "Forwards client conversation session ids (codex Session-Id/Thread-Id, claude X-Claude-Code-Session-Id, dsh X-DeepSeek-Harness-Session-Id) to OpenCode Zen as x-opencode-session for sticky routing and prompt-cache affinity.",
+      "author": "ahoo",
+      "version": "0.1.0",
+      "repository": "https://github.com/ahoo/cpa-plugin-opencode-session-mapper",
+      "homepage": "https://github.com/ahoo/cpa-plugin-opencode-session-mapper",
+      "license": "MIT",
+      "tags": [
+        "opencode",
+        "session-affinity",
+        "interceptor"
+      ]
+    },
+    {
       "id": "kiro",
       "name": "Kiro",
       "description": "A CLIProxyAPI plugin that bridges Kiro OAuth accounts to AWS CodeWhisperer and exposes a standard Claude Messages interface.",
