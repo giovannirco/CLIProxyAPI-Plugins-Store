@@ -902,6 +902,22 @@
         "Codex",
         "Dashboard"
       ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor for CPA/CLIProxyAPI",
+      "description": "Adds user-authorized Cursor subscriptions as a CLIProxyAPI provider with OAuth login, dynamic model discovery, streaming OpenAI Chat Completions, bounded session checkpoints, stable tool-call IDs, empty-response validation, image and text attachments, separated request and host-attempt metrics, deduplicated account status, and bilingual model controls. | 将用户本人授权的 Cursor 订阅接入 CLIProxyAPI，提供 OAuth 登录、动态模型发现、OpenAI Chat Completions 流式调用、有界会话检查点、稳定工具调用 ID、空响应校验、图片与文本附件、分离的请求与宿主尝试指标、账户去重及中英文模型控制。",
+      "author": "yobo2u",
+      "repository": "https://github.com/yobo2u/omsub",
+      "homepage": "https://github.com/yobo2u/omsub/tree/cursor/cursor-plugin",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "Cursor",
+        "OAuth",
+        "Management",
+        "Usage"
+      ]
     }
   ]
 }
