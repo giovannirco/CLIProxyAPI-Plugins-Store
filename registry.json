@@ -854,6 +854,22 @@
         "reasoning",
         "normalizer"
       ]
+    },
+    {
+      "id": "key-provider-access",
+      "name": "Key Provider Access",
+      "description": "Enforces per-CPA-key allow and deny policies for OAuth profiles and API-backed upstream providers, with a management dashboard and profile-aware scheduler filtering.",
+      "author": "GLGDLY",
+      "version": "0.0.3",
+      "repository": "https://github.com/GLGDLY/key-provider-access",
+      "homepage": "https://github.com/GLGDLY/key-provider-access",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Auth",
+        "Security",
+        "Scheduler"
+      ]
     }
   ]
 }
