@@ -2,6 +2,22 @@
   "schema_version": 1,
   "plugins": [
     {
+      "id": "credential-tier-router",
+      "name": "Credential Tiers",
+      "description": "Manages Codex and Antigravity credentials through quota-aware primary, regular, backup, and paused tiers with a Management Center UI.",
+      "author": "William-zgx",
+      "version": "0.1.2",
+      "repository": "https://github.com/William-zgx/cpa-plugin-credential-tier-router",
+      "homepage": "https://github.com/William-zgx/cpa-plugin-credential-tier-router",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Management",
+        "Codex",
+        "Antigravity"
+      ]
+    },
+    {
       "id": "opencode-go-cliproxyapi",
       "name": "OpenCode Go",
       "description": "One provider for the OpenCode Go plan: chat-completions, messages, and responses routes behind one shared key pool.",
@@ -59,6 +75,7 @@
       "author": "Willxup",
       "version": "0.1.0",
       "repository": "https://github.com/Willxup/cpa-plugin-usage-keeper",
+      "logo": "https://raw.githubusercontent.com/Willxup/cpa-plugin-usage-keeper/main/logo.svg",
       "homepage": "https://github.com/Willxup/cpa-plugin-usage-keeper",
       "license": "MIT",
       "tags": [
@@ -214,9 +231,10 @@
     {
       "id": "model-mapper",
       "name": "Model Mapper",
-      "description": "Maps requested CLIProxyAPI model names to upstream models across Claude, OpenAI Chat Completions, and OpenAI Responses.",
+      "description": "Maps requested model names to upstream models using ordered exact, wildcard, case-conversion, and authenticated API-key-scoped rules. Use it to switch upstream models without changing client configuration, consolidate aliases, or route authenticated callers to different models.",
       "author": "DoingDog",
       "repository": "https://github.com/DoingDog/cpa-plugin-model-mapper",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-model-mapper/main/logo.png",
       "homepage": "https://github.com/DoingDog/cpa-plugin-model-mapper",
       "license": "Unlicense",
       "tags": [
@@ -337,8 +355,9 @@
       "name": "CPA Account Config Manager",
       "description": "Manages CLIProxyAPI account configurations with redacted account inspection, multi-format import and export, usage visibility, safe batch edits, persistent defaults, and in-plugin account CRUD.",
       "author": "Mxucc",
-      "version": "0.2.0",
+      "version": "0.3.1372",
       "repository": "https://github.com/Mxucc/cpa-account-config-manager",
+      "logo": "https://raw.githubusercontent.com/Mxucc/cpa-account-config-manager/main/internal/manager/cpama.svg",
       "homepage": "https://github.com/Mxucc/cpa-account-config-manager",
       "license": "MIT",
       "tags": [
@@ -447,7 +466,7 @@
     {
       "id": "cpa-apply-patch",
       "name": "Apply Patch Bridge",
-      "description": "Bridges the Codex client's native apply_patch tool to backends without freeform custom-tool support (Claude, etc.): rewrites custom tools into {\"input\": string} function tools on the request path and restores custom_tool_call events on the response path, so structured patch edits, diff review cards, and one-click undo work for every model behind the proxy. | \u8ba9 Codex \u5ba2\u6237\u7aef\u5728 Claude \u7b49\u4e0d\u652f\u6301 freeform custom \u5de5\u5177\u7684\u540e\u7aef\u4e0a\u6062\u590d\u539f\u751f apply_patch:\u8bf7\u6c42\u65b9\u5411\u628a custom \u5de5\u5177\u6539\u5199\u4e3a {\"input\": string} \u51fd\u6570\u5de5\u5177,\u54cd\u5e94\u65b9\u5411\u8fd8\u539f custom_tool_call \u4e8b\u4ef6\u65cf,\u7ed3\u6784\u5316\u8865\u4e01\u7f16\u8f91\u3001\u5dee\u5f02\u5ba1\u6838\u5361\u4e0e\u4e00\u952e\u64a4\u9500\u5bf9\u4ee3\u7406\u540e\u7684\u6240\u6709\u6a21\u578b\u53ef\u7528\u3002",
+      "description": "Bridges the Codex client's native apply_patch tool to backends without freeform custom-tool support (Claude, etc.): rewrites custom tools into {\"input\": string} function tools on the request path and restores custom_tool_call events on the response path, so structured patch edits, diff review cards, and one-click undo work for every model behind the proxy. | 让 Codex 客户端在 Claude 等不支持 freeform custom 工具的后端上恢复原生 apply_patch:请求方向把 custom 工具改写为 {\"input\": string} 函数工具,响应方向还原 custom_tool_call 事件族,结构化补丁编辑、差异审核卡与一键撤销对代理后的所有模型可用。",
       "author": "zhangziming1124",
       "repository": "https://github.com/zhangziming1124/cpa-apply-patch",
       "homepage": "https://github.com/zhangziming1124/cpa-apply-patch",
@@ -739,6 +758,206 @@
         "Security",
         "Codex",
         "Responses"
+      ]
+    },
+    {
+      "id": "censorship",
+      "name": "Censorship",
+      "description": "Filters selected text in CLIProxyAPI request bodies with strict format and role scopes, supporting block, strip, and zero-width obfuscation modes. Use it to reject or transform configured terms before upstream execution; it never inspects or changes model responses.",
+      "author": "DoingDog",
+      "repository": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-censorship/main/logo.png",
+      "homepage": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "license": "Unlicense"
+    },
+    {
+      "id": "aggregate-usage",
+      "name": "Aggregate Usage",
+      "description": "Aggregates quota and usage for one logical CPAMP account across multiple CLIProxyAPI nodes, with a management dashboard, history, and DingTalk reporting.",
+      "author": "Stars4422335",
+      "version": "0.3.1",
+      "repository": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
+      "homepage": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Quota",
+        "Dashboard"
+      ]
+    },
+    {
+      "id": "cpa-key-billing",
+      "name": "CPA Key Billing",
+      "description": "Adds downstream API key billing with subscription quotas, model access controls, concurrency limits, and an embedded management UI.",
+      "author": "haowang02",
+      "version": "1.1.2",
+      "repository": "https://github.com/haowang02/cpa-plugin-key-billing",
+      "homepage": "https://github.com/haowang02/cpa-plugin-key-billing",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Billing",
+        "Quota",
+        "Access Control"
+      ]
+    },
+    {
+      "id": "ark-429-autoban",
+      "name": "ARK 429 Autoban",
+      "description": "Auto-isolates Volcano Engine ARK API keys on HTTP 429 with precise reset-time parsing, per-error-code fallback durations, key label auto-compute from config comments, and a management UI for monitoring and manual unban.",
+      "author": "wyx1818",
+      "repository": "https://github.com/wyx1818/ark-429-autoban",
+      "homepage": "https://github.com/wyx1818/ark-429-autoban",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Usage",
+        "ARK",
+        "Volcano Engine",
+        "429"
+      ]
+    },
+    {
+      "id": "glm-vision-bridge",
+      "name": "GLM Vision Bridge",
+      "description": "Bridges vision and text models with bounded persistent visual memory, parallel image-tool batch handling, explicit reanalysis, and safe history compression across OpenAI Chat, Responses, and Claude Messages.",
+      "author": "wangwq7",
+      "version": "1.1.4",
+      "repository": "https://github.com/wangwq7/cpa-glm-vision-bridge",
+      "homepage": "https://github.com/wangwq7/cpa-glm-vision-bridge",
+      "license": "MIT",
+      "tags": [
+        "Executor",
+        "Vision",
+        "Router",
+        "Claude",
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "api-key-manager",
+      "name": "API Key 管理器",
+      "description": "为 CLIProxyAPI API Key 增加名称、备注，并提供 API Key 的增删改查管理页面。",
+      "author": "bmqy",
+      "version": "0.1.7",
+      "repository": "https://github.com/bmqy/cpa-plugin-apikey-manager",
+      "homepage": "https://github.com/bmqy/cpa-plugin-apikey-manager",
+      "tags": [
+        "Management",
+        "API Key",
+        "Credentials"
+      ]
+    },
+    {
+      "id": "opencode-go-quota",
+      "name": "OpenCode Go Pool",
+      "description": "Quota-aware OpenCode Go account dashboard and operator pool controls for CLIProxyAPI.",
+      "author": "Duu",
+      "version": "0.4.0",
+      "repository": "https://github.com/duu261/opencode-go-pool",
+      "homepage": "https://github.com/duu261/opencode-go-pool",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Scheduler",
+        "OpenCode"
+      ]
+    },
+    {
+      "id": "deepseek-reasoning-fixer",
+      "name": "DeepSeek Reasoning Content Fixer",
+      "description": "Normalizes DeepSeek thinking-mode requests: fills missing/empty reasoning_content on assistant messages so the upstream Console no longer rejects long agentic sessions with 400.",
+      "author": "ahoo",
+      "version": "0.1.1",
+      "repository": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
+      "homepage": "https://github.com/ahoo/cpa-plugin-deepseek-reasoning-fixer",
+      "license": "MIT",
+      "tags": [
+        "deepseek",
+        "reasoning",
+        "normalizer"
+      ]
+    },
+    {
+      "id": "key-provider-access",
+      "name": "Key Provider Access",
+      "description": "Enforces per-CPA-key allow and deny policies for OAuth profiles and API-backed upstream providers, with a management dashboard and profile-aware scheduler filtering.",
+      "author": "GLGDLY",
+      "version": "0.0.3",
+      "repository": "https://github.com/GLGDLY/key-provider-access",
+      "homepage": "https://github.com/GLGDLY/key-provider-access",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Auth",
+        "Security",
+        "Scheduler"
+      ]
+    },
+    {
+      "id": "aq-codex-responses-lite",
+      "name": "Codex Responses Lite Rules",
+      "description": "Enables CPA's native Codex Responses Lite path for exact provider-prefix/model rules, preventing automatic hosted image_generation injection without replacing CPA routing, credentials, execution, or streaming.",
+      "author": "AstroQore",
+      "version": "0.1.0",
+      "repository": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
+      "homepage": "https://github.com/AstroQore/cpa-plugin-codex-responses-lite",
+      "license": "MIT",
+      "tags": [
+        "Interceptor",
+        "Codex",
+        "Responses"
+      ]
+    },
+    {
+      "id": "cpa-usage-statistics",
+      "name": "CPA Usage Statistics",
+      "description": "Tracks per-auth-file token usage, quota reset cycles, account status, and equivalent USD/CNY API cost in a CPA management dashboard.",
+      "author": "Oniokey",
+      "version": "0.6.1",
+      "repository": "https://github.com/Oniokey/CPAUsageStatistics",
+      "homepage": "https://github.com/Oniokey/CPAUsageStatistics",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Statistics",
+        "Codex",
+        "Dashboard"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor for CPA/CLIProxyAPI",
+      "description": "Adds user-authorized Cursor subscriptions as a CLIProxyAPI provider with OAuth login, dynamic model discovery, streaming OpenAI Chat Completions, bounded session checkpoints, stable tool-call IDs, empty-response validation, image and text attachments, separated request and host-attempt metrics, deduplicated account status, and bilingual model controls. | 将用户本人授权的 Cursor 订阅接入 CLIProxyAPI，提供 OAuth 登录、动态模型发现、OpenAI Chat Completions 流式调用、有界会话检查点、稳定工具调用 ID、空响应校验、图片与文本附件、分离的请求与宿主尝试指标、账户去重及中英文模型控制。",
+      "author": "yobo2u",
+      "repository": "https://github.com/yobo2u/omsub",
+      "homepage": "https://github.com/yobo2u/omsub/tree/cursor/cursor-plugin",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "Cursor",
+        "OAuth",
+        "Management",
+        "Usage"
+      ]
+    },
+    {
+      "id": "provider-rate-limiter",
+      "name": "Provider Rate Limiter",
+      "description": "Applies independent sliding-window RPM limits to CPA auth candidates through the official scheduler plugin capability, with provider-wide defaults and per-auth overrides.",
+      "author": "lsmallice",
+      "version": "0.3.0",
+      "repository": "https://github.com/lsmallice/cliproxyapi-provider-rate-limiter-plugin",
+      "homepage": "https://github.com/lsmallice/cliproxyapi-provider-rate-limiter-plugin",
+      "license": "MIT",
+      "tags": [
+        "Scheduler",
+        "Rate Limit",
+        "Codex",
+        "Multi-account"
       ]
     }
   ]
